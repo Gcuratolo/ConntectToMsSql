@@ -27,7 +27,8 @@ public class ConnectToMsSql {
         try {
             int cnt = 0;
 
-            String dbURL = "jdbc:sqlserver://localhost:1433;database=Dentrix;user=sa;password=Hancock@019";
+            //String dbURL = "jdbc:sqlserver://localhost:1433;database=Dentrix;user=sa;password=Hancock@019";
+            String dbURL = "jdbc:sqlserver://34.67.113.231:1433;database=Dentrix;user=sa;password=Hancock@019";
             conn = DriverManager.getConnection(dbURL);
             if (conn != null) {
                 DatabaseMetaData dm = (DatabaseMetaData) conn.getMetaData();
